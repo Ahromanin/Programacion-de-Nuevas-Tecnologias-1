@@ -1,0 +1,112 @@
+/* aca empieza todo lo del header*/
+.body {
+  background: linear-gradient(to bottom, black 5%, #181818 30%, black 70%);
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #44FFD2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*hasta aca generales*/
+
+/*empieza el carrusel*/
+.container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.carousel-inner {
+  max-width: 700px;
+  height: 450px;
+}
+
+.container h1 {
+  color: black;
+  text-shadow: 1px 1px 25px white;
+  font-weight: bolder;
+}
+
+.container h3 {
+  color: black;
+  text-shadow: 1px 1px 25px white;
+  font-weight: bold;
+}
+
+/* hasta aca llega todo lo del carrusel*/
+
+/*aca empieza el main y las tarjetas*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  align-self: center;
+  flex-flow: row wrap;
+  /*flex-direction y flex wrap*/
+  font-weight: lighter;
+  align-items: center;
+  margin: 5%;
+  color: white;
+
+}
+
+.tarjeta {
+  height: 200px;
+  width: 230px;
+}
+
+/* hasta aca las tarjetas*/
+
+/*empieza el menu*/
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin: 5%;
+  color: white;
+  text-shadow: 1px 1px 25px #87F6FF;
+}
+
+.title {
+  flex-basis: 100%;
+
+}
+
+.p {
+  flex-basis: 100%;
+}
+
+.opciones {
+  flex-flow: row wrap;
+  padding: 50px;
+
+}
+
+.opcion {
+  flex-basis: 25%;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  background: lightgrey;
+  color: black;
+}
+
+/* buscar botones con css
+
+
+carousel-inner>.item>a>img .img-responsive*/

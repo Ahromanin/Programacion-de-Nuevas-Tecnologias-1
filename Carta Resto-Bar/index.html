@@ -1,123 +1,215 @@
 <html>
 
-  <head>
-
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" content="IE-edge" name="viewport" content="width=device-width, initial-scale=1">
+    <title> Alboroto Bar </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  
-    <title>Carta Resto-Bar</title>
+<body class="body">
+    <header class="container"  id="inicio">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-    <link href='css/style.css' rel='stylesheet'>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="imagen">
+                    <img class="img-fluid" src="img/pasta.jpg" alt="Pasta con Vegetales">
+                </div>
 
-  </head>
+                <div class="item" id="imagen">
+                    <img class="img-fluid" src="img/pasticho.jpg" alt="Pasticho Vegano">
+                </div>
 
-  <body>
+                <div class="item" id="imagen">
+                    <img class="img-fluid" src="img/ratatouille.jpg" alt="Ratatouille">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Alboroto Bar</h1>
+                    <h3>Castigate con gusto</h3>
+                </div>
+            </div>
 
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
 
-    <div  id="banner">
+    <section class="flex-container">
+        <div class="tarjeta">
+            <img src="img/Bebidas.jpg" alt="shot" width="200" href="#bebidas">
+            <a href="#bebidas">
+                <h2>Bebidas</h2>
+            </a>
+            <p>Jugos, drinks, gaseosas</p>
+        </div>
 
-      <h1>Barracas Bar</h1>
+        <div class="tarjeta">
+            <img src="img/comida.jpg" alt="tacos" width="200" href="#salados">
+            <a href="#salados">
+                <h2>Salados</h2>
+            </a>
+            <p>Entradas, platos fuertes, picadas</p>
+        </div>
 
+        <div class="tarjeta">
+            <img src="img/postres.jpg" alt="postres" width="200" href="#postres">
+            <a href="#postres">
+                <h2>Postres</h2>
+            </a>
+            <p>Helados, cakes, delicias con frutas</p>
+        </div>
+    </section>
 
+    <section class="menu">
+        <div>
+            <h1 class="title" id="bebidas">Bebidas</h1>
+        </div>
+        <div>
+            <h3 class="p">Algo para calentar los motores</h3>
 
-    </div>
+        </div>
+        <div class="opciones">
+            <div class="opcion">
+                <img src="img/destornillador.jpg" alt="destornillador" width="500">
+                <h3>
+                    Destornillador
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/sunrise.jpg" alt="sunrise" width="500">
+                <h3>
+                    Tequila Sunrise
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/mojito.jpg" alt="mojito" width="500">
+                <h3>
+                    Mojito
+                </h3>
+            </div>
+        </div>
+        
+        <a href="#inicio">
+            <h4>Volver al inicio</h4>
+        </a>
 
-    <div class="container">
+        <div>
+            <h1 class="title" id="salados">Salados</h1>
+        </div>
+        <div>
+            <h3 class="p">Platos mejores que los de la abuela</h3>
 
-      <div class="row">
-    
-        <div class="col-xs-12 col-sm-6 col-md-3">
- 
+        </div>
+        <div class="opciones">
+            <div class="opcion">
+                <img src="img/pasta.jpg" alt="pasta" width="500">
+                <h3>
+                    Pasta con Vegetales
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/pasticho.jpg" alt="pasticho" width="500">
+                <h3>
+                    Pasticho Vegano
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/ratatouille.jpg" alt="ratatouille" width="500">
+                <h3>
+                    Ratatouille
+                </h3>
+            </div>
+        </div>
+        
+        <a href="#inicio">
+            <h4>Volver al inicio</h4>
+        </a>
 
-    <div class="tarjeta">
+        <div>
+            <h1 class="title" id="postres">Postres</h1>
+        </div>
+        <div>
+            <h3 class="p">Rompe el mito: borracho sí come dulce</h3>
 
-      <img src="images/choripan.jpg" alt="Choripan" width="100">
+        </div>
+        <div class="opciones">
+            <div class="opcion">
+                <img src="img/tres_leches.jpg" alt="tres_leches" width="500">
+                <h3>
+                    Torta Tres Leches
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/cheesecake.jpg" alt="cheesecake" width="500">
+                <h3>
+                    Cheesecake de Frutos Rojos
+                </h3>
+            </div>
+            <div class="opcion">
+                <img src="img/chocotorta.jpg" alt="chocotorta" width="500">
+                <h3>
+                    Chocotorta con DDL
+                </h3>
+            </div>
+        </div>
 
-      <h2 class="btn btn-primary">elegir</h2>
+        <a href="#inicio">
+            <h4>Volver al inicio</h4>
+        </a>
 
-      <p>Choripan</p>
+    </section>
+    <footer id="footer">
+        <h4>Hacé tu pedido al 11 5412 5629 <br><br>
+        Anchorena 614, CABA </h4>
 
-    </div>
-
- 
-  </div>
-
-  <div class="col-xs-12 col-sm-6 col-md-3">
-
-
-    <div class="tarjeta">
-
-      <img src="images/bondiola.jpg" alt="Bondiola" width="100">
-
-      <h2 class="btn btn-primary">elegir</h2>
-
-      <p>Bondiola</p>
-
-    </div>
-
-  </div>
-
-  <div class="col-xs-12 col-sm-6 col-md-3">
-
-
-
-    <div class="tarjeta">
-
-      <img src="images/milanesa.jpg" alt="Milanesa" width="100">
-
-      <h2 class="btn btn-primary">elegir</h2>
-
-      <p>Milanesa </p>
-
-    </div>
-
-  </div>
-
-  <div class="col-xs-12 col-sm-6 col-md-3">
-
-
-
-    <div class="tarjeta">
-
-      <img src="images/hamburguesa.jpg" alt="hamburguesa" width="100">
-
-      <h2 class="btn btn-primary">elegir</h2>
-
-      <p>Hamburguesa Completa</p>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-    <footer  id="footer">
-
-      <p>Este es el pie de la página de prueba</p>
+        <!-- #TODO No se ven bien los simb de RRSS-->
+        
       <ul class="list-inline">
-
         <li class="btn btn-primary"><a href="#"><i class="fa fa-youtube"></i></a></li>
-      
         <li class="btn btn-primary"><a href="#"><i class="fa fa-facebook"></i></a></li>
-      
         <li class="btn btn-primary"><a href="#"><i class="fa fa-twitter"></i></a></li>
-      
         <li class="btn btn-primary"><a href="#"><i class="fa fa-github"></i></a></li>
-      
       </ul>
+        
     </footer>
 
- 
+    <!-- para linkear las tarjetas a la parte de la pagina donde estan los productos de su sección 
+    https://www.w3schools.com/html/html_links_bookmarks.asp-->
 
-  </body>
+</body>
 
 </html>
 
- 
+
+<!--
+    imagen con link
+    <a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+button as a link
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+explorar atributo target de la etiqueta <a>
+
+    cambiar color a los links 
+    https://www.w3schools.com/html/html_links_colors.asp
+
+-->
