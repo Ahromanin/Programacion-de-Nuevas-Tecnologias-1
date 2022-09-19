@@ -8,6 +8,7 @@
     <title> Alboroto Bar </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body class="body">
@@ -174,24 +175,87 @@
             <h4>Volver al inicio</h4>
         </a>
 
+        <form name="form1" action="">
+    
+            <h1 > Hace tu pedido!</h1>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <label for="Telefono">Telefono:</label>
+            <input type="number" id="telefono" name="telefono"><br><br>
+            <label for="mail">Mail:</label>
+            <input type="text" id="mail" name="email"><br><br>
+          
+            <h1> ¿Que vas a comer?</h1>
+            <h3>Bebidas</h3>
+            <input type="checkbox" name="Destornillador" value="Destornillador">
+            <label for="Destornillador"> Destornillador</label><br>
+            <input type="checkbox" name="Tequila" value="Tequila Sunrise">
+            <label for="Tequila"> Tequila Sunrise</label><br>
+            <input type="checkbox" name="Mojito" value="Mojito">
+            <label for="Mojito"> Mojito</label><br>
+            
+            <h3>Salados</h3>
+            <input type="checkbox" name="PastaconVegetales" value="Pasta con Vegetales">
+            <label for="PastaconVegetales"> Pasta con Vegetales</label><br>
+            <input type="checkbox" name="Pasticho" value="Pasticho Vegano">
+            <label for="Pasticho"> Pasticho Vegano</label><br>
+            <input type="checkbox" name="Ratatouille" value="Ratatouille">
+            <label for="Ratatouille"> Ratatouille</label><br>
+        
+            <h3>Postres</h3>
+            <input type="checkbox" name="TortaTresLeches" value="Torta Tres Leches">
+            <label for="TortaTresLeches"> Torta Tres Leches</label><br>
+            <input type="checkbox" name="Cheesecake" value="Cheesecake de Frutos Rojos">
+            <label for="Cheesecake"> Cheesecake de Frutos Rojos</label><br>
+            <input type="checkbox" name="Chocotorta con DDL" value="Chocotorta con DDL" >
+            <label for="Chocotorta"> Chocotorta con DDL</label><br><br>
+          
+            <input style="color: black" type="submit" value="Enviar" onclick="validateEmail(document.form1.email)">
+        </form>
+
     </section>
-    <footer id="footer">
-        <h4>Hacé tu pedido al 11 5412 5629 <br><br>
-        Anchorena 614, CABA </h4>
+    <footer class="text-center footer-style">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 footer-col">
+                <h3>Secciones</h3>
+                <p><a href="#bebidas">Bebidas</a></p>
+                <p><a href="#salados">Salados</a></p>
+                <p><a href="#postres">Postres</a></p>
+              </div>
+         
+            <div class="col-md-4 footer-col">
+              <h3>Mis redes</h3>
+              <ul class="list-inline">
+                <li>
+                    <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                </li>
+                </ul>
+            </div>
 
-        <!-- #TODO No se ven bien los simb de RRSS-->
-        
-      <ul class="list-inline">
-        <li class="btn btn-primary"><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <li class="btn btn-primary"><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li class="btn btn-primary"><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li class="btn btn-primary"><a href="#"><i class="fa fa-github"></i></a></li>
-      </ul>
-        
-    </footer>
+            <div class="col-md-2 footer-col">
+                <h3>Dirección</h3>
+                <p>
+                  CABA - Argentina <br /> 
+                </p>
+              </div>
 
-    <!-- para linkear las tarjetas a la parte de la pagina donde estan los productos de su sección 
-    https://www.w3schools.com/html/html_links_bookmarks.asp-->
+            <div class="col-md-3 footer-col">
+              <h3>Telefono</h3>
+              <p> Hacé tu pedido al 11 5412 5629 </p>
+            </div>
+          </div>
+        </div>
+
+      </footer>
 
 </body>
 
