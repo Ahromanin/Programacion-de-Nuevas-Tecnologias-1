@@ -175,13 +175,13 @@
             <h4>Volver al inicio</h4>
         </a>
 
-        <form name="form1" action="">
+        <form name="form1" method="dialog" action="">
     
             <h1 > Hace tu pedido!</h1>
             <label for="Nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
             <label for="Apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido"><br><br>
+            <input type="text" id="apellido" name="apellido" required><br><br>
             <label for="Telefono">Telefono:</label>
             <input type="number" id="telefono" name="telefono"><br><br>
             <label for="mail">Mail:</label>
@@ -212,7 +212,7 @@
             <input type="checkbox" name="Chocotorta con DDL" value="Chocotorta con DDL" >
             <label for="Chocotorta"> Chocotorta con DDL</label><br><br>
           
-            <input style="color: black" type="submit" value="Enviar" onclick="validateEmail(document.form1.email)">
+            <input style="color: black" type="submit" value="Enviar" onclick="enviar(document.form1.email,document.form1.telefono)">
         </form>
 
     </section>
@@ -236,7 +236,7 @@
                     <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="#" class="btn btn-primary"><i class="fa fa-instagram"></i></a>
                 </li>
                 </ul>
             </div>
