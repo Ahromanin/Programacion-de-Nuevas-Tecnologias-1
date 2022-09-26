@@ -1,6 +1,6 @@
 function enviar(emailId, telefono)
 {
-if( ValidarNroTel(telefono) && validateEmail(emailId))
+if( ValidarNroTel(telefono) && validateEmail(emailId) && ValidarProductos())
 {
 alert("Formulario enviado");
 }
@@ -40,4 +40,15 @@ function ValidarNroTel(telefono)
  alert("teléfono inválido (Maximo 10 digitos)");
  return false;
  }
+}
+
+function ValidarProductos()
+{
+let checked = document.querySelector("input[type=checkbox]:checked");
+if (checked == null) {
+    alert("debe seleccionar al menos un producto");
+    return false;
+}else{
+    return true;
+}
 }
