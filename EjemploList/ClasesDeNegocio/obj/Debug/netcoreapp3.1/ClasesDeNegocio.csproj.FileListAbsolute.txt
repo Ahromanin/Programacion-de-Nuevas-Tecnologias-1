@@ -1,0 +1,5 @@
+C:\Users\johan\OneDrive\Escritorio\PNT1\ClasesDeNegocio\obj\Debug\netcoreapp3.1\ClasesDeNegocio.csproj.AssemblyReference.cache
+C:\Users\johan\OneDrive\Escritorio\PNT1\ClasesDeNegocio\obj\Debug\netcoreapp3.1\ClasesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johan\OneDrive\Escritorio\PNT1\ClasesDeNegocio\obj\Debug\netcoreapp3.1\ClasesDeNegocio.AssemblyInfoInputs.cache
+C:\Users\johan\OneDrive\Escritorio\PNT1\ClasesDeNegocio\obj\Debug\netcoreapp3.1\ClasesDeNegocio.AssemblyInfo.cs
+C:\Users\johan\OneDrive\Escritorio\PNT1\ClasesDeNegocio\obj\Debug\netcoreapp3.1\ClasesDeNegocio.csproj.CoreCompileInputs.cache
